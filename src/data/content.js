@@ -174,11 +174,5 @@ export const contact = {
 export const footer = {
   tagline:
     "Gospel Minister · Singer · Producer · Author · Motivational Speaker",
-  links: [
-    { label: "Privacy Policy", href: "#" },
-    { label: "Terms of Service", href: "#" },
-    { label: "Praise Channel Studios", href: "#" },
-    { label: "Press Inquiries", href: "#" },
-  ],
   copyright: `© ${new Date().getFullYear()} ${site.name}. All rights reserved.`,
 };

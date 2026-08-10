@@ -14,7 +14,7 @@ export default function Workshops() {
           </h2>
         </div>
 
-        <div className="mt-10 grid gap-6 md:grid-cols-2">
+        <div className="mt-10 grid justify-center gap-6">
           {workshopsSection.programs.map((program) => (
             <div
               key={program.title}

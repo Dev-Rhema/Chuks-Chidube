@@ -92,18 +92,6 @@ export default function ContactFooter() {
             {footer.tagline}
           </p>
 
-          <nav className="mt-6 flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
-            {footer.links.map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                className="text-xs text-cream-100/60 hover:text-gold-400"
-              >
-                {link.label}
-              </a>
-            ))}
-          </nav>
-
           <p className="mt-6 text-xs text-cream-100/40">{footer.copyright}</p>
         </div>
       </div>
