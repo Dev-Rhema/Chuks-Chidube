@@ -3,7 +3,7 @@ import SectionLabel from "./ui/SectionLabel";
 
 export default function Testimonial() {
   return (
-    <section className="bg-cream-100 py-16 lg:py-20">
+    <section id="testimonies" className="bg-cream-100 py-16 lg:py-20">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <div className="text-center">
           <SectionLabel>{testimonial.eyebrow}</SectionLabel>

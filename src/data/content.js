@@ -1,8 +1,8 @@
 // Site content for the homepage, workshops, testimonies, and contact sections.
 
 export const site = {
-  name: "Evang Chuks Chidube",
-  firstName: "Evang Chuks",
+  name: "Evang. Chuks Chidube",
+  firstName: "Evang.",
   lastName: "Chidube",
   role: "Gospel Minister, Singer & Motivational Speaker",
   phone: "+234 803 328 2359",
@@ -13,6 +13,7 @@ export const nav = [
   { label: "About", href: "#about" },
   { label: "Ministry", href: "#keynotes" },
   { label: "Counselling Corner", href: "#workshops" },
+  { label: "Testimonies", href: "#testimonies" },
   { label: "Blog", href: "#/blog" },
 ];
 
@@ -28,13 +29,13 @@ export const hero = {
 export const visionStatement = {
   eyebrow: "Ordained Minister · Gospel Artiste · Author",
   heading: "Called to Minister Through Music and the Word",
-  body: "Since giving his life to Christ in 1984, Evang Chuks Chidube has used music, teaching, and counsel to strengthen faith, marriages, and communities across Africa and beyond.",
+  body: "Since giving his life to Christ in 1984, Evang. Chuks Chidube has used music, teaching, and counsel to strengthen faith, marriages, and communities across Africa and beyond.",
 };
 
 export const about = {
-  eyebrow: "About Evang Chuks Chidube",
-  heading: "Meet Evang Chuks Chidube",
-  body: "Evang Chuks Chidube — the brain behind the fast-selling Gospel album DIS KIND GOD and leader of the organization PRAISE CHANNEL — is an ordained minister of the Gospel of our Lord Jesus Christ. He is a singer, producer, multi-instrumentalist, marriage counsellor, motivational speaker, and author. A native of Adazi-Enu, Anaocha LGA, Anambra State, and born in Abakaliki, he became born again on 15th April 1984 at All Saints Anglican Church, Abakaliki, and was ordained in February 2000 by Pastor Paul Adefarasin of House On The Rock, Lagos. Over more than three decades of ministry, he has released over twenty Gospel albums, sings in about thirty-eight African languages, and holds an honorary doctorate from Jordan Institute, USA.",
+  eyebrow: "About Evang. Chuks Chidube",
+  heading: "Meet Evang. Chuks Chidube",
+  body: "Evang. Chuks Chidube — the brain behind the fast-selling Gospel album DIS KIND GOD and leader of the organization PRAISE CHANNEL — is an ordained minister of the Gospel of our Lord Jesus Christ. He is a singer, producer, multi-instrumentalist, marriage counsellor, motivational speaker, and author. A native of Adazi-Enu, Anaocha LGA, Anambra State, and born in Abakaliki, he became born again on 15th April 1984 at All Saints Anglican Church, Abakaliki, and was ordained in February 2000 by Pastor Paul Adefarasin of House On The Rock, Lagos. Over more than three decades of ministry, he has released over twenty Gospel albums, sings in about thirty-eight African languages, and holds an honorary doctorate from Jordan Institute, USA.",
   cardTitle: "Gospel Minister · Author · Marriage Counsellor",
   cardCta: `Book ${site.firstName} to Speak`,
   linkLabel: `More About ${site.firstName}`,
@@ -43,7 +44,7 @@ export const about = {
 export const quote = {
   line1: "Music can lift a soul.",
   line2: "The Word can transform a life.",
-  sub: "For over three decades, Evang Chuks Chidube has combined song, scripture, and sound counsel to help people grow in faith, marriage, and purpose.",
+  sub: "For over three decades, Evang. Chuks Chidube has combined song, scripture, and sound counsel to help people grow in faith, marriage, and purpose.",
 };
 
 export const workHelps = {
