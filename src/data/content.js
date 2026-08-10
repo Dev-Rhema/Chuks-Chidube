@@ -13,7 +13,7 @@ export const nav = [
   { label: "About", href: "#about" },
   { label: "Ministry", href: "#keynotes" },
   { label: "Workshops", href: "#workshops" },
-  { label: "Blog", href: "/blog" },
+  { label: "Blog", href: "#/blog" },
 ];
 
 export const hero = {
