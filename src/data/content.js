@@ -12,14 +12,14 @@ export const site = {
 export const nav = [
   { label: "About", href: "#about" },
   { label: "Ministry", href: "#keynotes" },
-  { label: "Workshops", href: "#workshops" },
+  { label: "Counselling Corner", href: "#workshops" },
   { label: "Blog", href: "#/blog" },
 ];
 
 export const hero = {
   eyebrow: "This is",
   headline: site.name,
-  tagline: "Ministering Through Music, the Word, and Wise Counsel",
+  tagline: "Ministering Through Music, the Word, and Marriage Counselling",
   description:
     "Ordained minister, award-winning Gospel recording artiste, and author helping individuals, marriages, and congregations grow in faith and purpose.",
   primaryCta: `Book ${site.firstName} to Speak`,
@@ -88,7 +88,7 @@ export const keynotesSection = {
 };
 
 export const workshopsSection = {
-  heading: "Workshops & Training",
+  heading: "Counselling Corner",
   programs: [
     {
       title: "Single and Married .com",

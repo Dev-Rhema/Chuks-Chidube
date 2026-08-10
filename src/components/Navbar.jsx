@@ -17,15 +17,38 @@ export default function Navbar() {
         </a>
 
         <nav className="hidden items-center gap-8 md:flex">
-          {nav.map((item) => (
-            <a
-              key={item.label}
-              href={item.href}
-              className="text-sm font-medium text-ink-600 transition-colors hover:text-navy-950"
-            >
-              {item.label}
-            </a>
-          ))}
+          {nav.map((item) => {
+            const isRouteLink = item.href.startsWith("#/");
+
+            return (
+              <a
+                key={item.label}
+                href={item.href}
+                onClick={(event) => {
+                  if (!isRouteLink) {
+                    event.preventDefault();
+                    const targetId = item.href.replace(/^#/, "");
+                    const scrollToSection = () => {
+                      const target = document.getElementById(targetId);
+                      if (target) {
+                        target.scrollIntoView({ behavior: "smooth" });
+                      }
+                    };
+
+                    if (window.location.hash.startsWith("#/blog")) {
+                      window.location.hash = "#/";
+                      setTimeout(scrollToSection, 150);
+                    } else {
+                      scrollToSection();
+                    }
+                  }
+                }}
+                className="text-sm font-medium text-ink-600 transition-colors hover:text-navy-950"
+              >
+                {item.label}
+              </a>
+            );
+          })}
         </nav>
 
         <Button
