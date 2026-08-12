@@ -88,9 +88,9 @@ export default function Navbar() {
             type="button"
             aria-label="Close menu"
             onClick={() => setOpen(false)}
-            className="absolute inset-0 bg-navy-950"
+            className="absolute inset-0 bg-navy-950/60 z-0"
           />
-          <nav className="absolute right-0 top-0 flex h-screen w-[80%] max-w-sm flex-col justify-between bg-navy-950 px-6 py-8 shadow-2xl">
+          <nav className="absolute right-0 top-0 z-10 flex h-screen w-[80%] max-w-sm flex-col justify-between bg-navy-950 px-6 py-8 shadow-2xl">
             <div className="flex flex-col gap-2">
               <div className="mb-6 flex items-center justify-between">
                 <a

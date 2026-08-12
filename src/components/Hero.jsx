@@ -1,5 +1,6 @@
 import { site, hero } from "../data/content";
 import PlaceholderImage from "./ui/PlaceholderImage";
+import heroImg from "../assets/imgs/heroImg.png";
 
 export default function Hero() {
   return (
@@ -22,12 +23,11 @@ export default function Hero() {
           </p>
         </div>
 
-        <div className="relative col-span-1">
-          <PlaceholderImage
-            label="Hero photo"
-            className="w-100 h-120"
-            rounded="rounded-3xl"
-            tone="dark"
+        <div className="relative col-span-1 w-11/12 max-w-[420px] sm:max-w-[480px] md:max-w-[320px] lg:max-w-[360px] mx-auto">
+          <img
+            src={heroImg}
+            alt=""
+            className="w-full h-auto rounded-3xl object-cover"
           />
         </div>
       </div>
