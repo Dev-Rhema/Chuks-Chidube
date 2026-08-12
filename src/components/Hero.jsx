@@ -27,6 +27,8 @@ export default function Hero() {
           <img
             src={heroImg}
             alt=""
+            loading="eager"
+            fetchPriority="high"
             className="w-full h-auto rounded-3xl object-cover"
           />
         </div>

@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import VisionStatement from "./components/VisionStatement";
@@ -10,6 +11,19 @@ import Testimonial from "./components/Testimonial";
 import ContactFooter from "./components/ContactFooter";
 
 function App() {
+  useEffect(() => {
+    // Preload critical images
+    const images = [
+      require("./assets/imgs/heroImg.png"),
+      require("./assets/imgs/about1.jpg"),
+      require("./assets/imgs/about2.jpg"),
+    ];
+
+    images.forEach((src) => {
+      const img = new Image();
+      img.src = src;
+    });
+  }, []);
   return (
     <div className="bg-cream-50">
       <Navbar />
