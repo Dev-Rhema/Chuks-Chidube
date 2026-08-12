@@ -5,7 +5,7 @@ import about2 from "../assets/imgs/about2.jpg";
 export default function About() {
   return (
     <section id="about" className="bg-cream-100 py-16 lg:py-20">
-      <div className="mx-auto grid max-w-7xl gap-12 px-6 lg:grid-cols-2 lg:items-center lg:px-10">
+      <div className="grid w-full gap-12 px-6 lg:mx-auto lg:max-w-7xl lg:grid-cols-2 lg:items-center lg:px-10">
         <div>
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold-600">
             {about.eyebrow}
@@ -13,7 +13,7 @@ export default function About() {
           <h2 className="mt-3 font-display text-3xl font-semibold text-navy-950 sm:text-4xl">
             {about.heading}
           </h2>
-          <p className="mt-5 max-w-lg text-base text-ink-600">{about.body}</p>
+          <p className="mt-5 text-base text-ink-600">{about.body}</p>
         </div>
 
         <div className="relative grid grid-cols-1 gap-4 md:grid-cols-5">
