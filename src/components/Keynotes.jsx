@@ -33,9 +33,6 @@ export default function Keynotes() {
                   </div>
                 )}
               </div>
-              <h3 className="mt-4 font-display text-xl font-semibold text-navy-950">
-                {talk.title}
-              </h3>
             </div>
           ))}
         </div>
