@@ -1,5 +1,8 @@
 import { useEffect } from "react";
 import Navbar from "./components/Navbar";
+import heroImg from "./assets/imgs/heroImg.png";
+import about1 from "./assets/imgs/about1.jpg";
+import about2 from "./assets/imgs/about2.jpg";
 import Hero from "./components/Hero";
 import VisionStatement from "./components/VisionStatement";
 import About from "./components/About";
@@ -13,11 +16,7 @@ import ContactFooter from "./components/ContactFooter";
 function App() {
   useEffect(() => {
     // Preload critical images
-    const images = [
-      require("./assets/imgs/heroImg.png"),
-      require("./assets/imgs/about1.jpg"),
-      require("./assets/imgs/about2.jpg"),
-    ];
+    const images = [heroImg, about1, about2];
 
     images.forEach((src) => {
       const img = new Image();

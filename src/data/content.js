@@ -68,22 +68,22 @@ export const keynotesSection = {
     {
       title: "Ministration 1",
       description: "Upcoming video content will appear here.",
-      iframe: "",
+      iframe: "https://www.youtube.com/embed/rIbt8IwSz5A?si=WxIE6MiKwyTtDlMi",
     },
     {
       title: "Ministration 2",
       description: "Upcoming video content will appear here.",
-      iframe: "",
+      iframe: "https://www.youtube.com/embed/nqvya_TF30U?si=m0Z14avqSgrxTIDZ",
     },
     {
       title: "Ministration 3",
       description: "Upcoming video content will appear here.",
-      iframe: "",
+      iframe: "https://www.youtube.com/embed/SEoSjMiplpc?si=_ncPd3OaDpwyNE4j",
     },
     {
       title: "Ministration 4",
       description: "Upcoming video content will appear here.",
-      iframe: "",
+      iframe: "https://www.youtube.com/embed/Y1MLwDBSH0o?si=VIh0pUnC1eJ174IQ",
     },
   ],
 };

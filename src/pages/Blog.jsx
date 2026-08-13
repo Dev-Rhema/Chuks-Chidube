@@ -25,6 +25,8 @@ export default function Blog() {
           </p>
         </div>
 
+        {/* Video grid moved to the Ministration section (Keynotes) */}
+
         <div className="mt-12 grid gap-6 md:grid-cols-2">
           {blogPosts.map((post) => (
             <article
