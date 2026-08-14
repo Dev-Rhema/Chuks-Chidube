@@ -1,7 +1,7 @@
 import { workshopsSection } from "../data/content";
 import Button from "./ui/Button";
-import PlaceholderImage from "./ui/PlaceholderImage";
 import SectionLabel from "./ui/SectionLabel";
+import singleAndMarriedImg from "../assets/imgs/s&m.jpg";
 
 export default function Workshops() {
   return (
@@ -20,10 +20,10 @@ export default function Workshops() {
               key={program.title}
               className="overflow-hidden rounded-3xl bg-cream-50"
             >
-              <PlaceholderImage
-                label="Workshop photo"
-                className="aspect-16/10 w-full"
-                rounded="rounded-none"
+              <img
+                src={singleAndMarriedImg}
+                alt={program.title}
+                className="aspect-16/10 w-full bg-navy-950/5 object-contain"
               />
               <div className="p-6">
                 <h3 className="font-display text-xl font-semibold text-navy-950">
