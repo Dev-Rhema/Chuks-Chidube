@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+# Sanity credentials (project ID/dataset aren't secret, but keep local envs out of git)
+.env
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

@@ -1,16 +1,42 @@
-# React + Vite
+# Chuks Chidube — Site
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React + Vite site. The blog section is powered by [Sanity](https://www.sanity.io) (free tier) so posts can be managed from any browser.
 
-Currently, two official plugins are available:
+## Site setup
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```bash
+npm install
+npm run dev
+```
 
-## React Compiler
+Blog pages need a Sanity project connected — see below. Without it, `/blog` shows a friendly "not connected" message instead of erroring.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Connecting the blog to Sanity
 
-## Expanding the ESLint configuration
+1. Create a free account at [sanity.io](https://www.sanity.io) and a new project (any name). Note the **Project ID** it gives you.
+2. In `studio/`, install and run the Studio locally:
+   ```bash
+   cd studio
+   npm install
+   npx sanity login
+   SANITY_STUDIO_PROJECT_ID=your-project-id npx sanity dev
+   ```
+   This opens the editing UI at `http://localhost:3333` where you (or the client) can create/edit blog posts.
+3. When ready to give the client a permanent editing link, deploy the Studio:
+   ```bash
+   SANITY_STUDIO_PROJECT_ID=your-project-id npx sanity deploy
+   ```
+   This hosts it at a free `your-studio-name.sanity.studio` URL — no separate hosting needed.
+4. Back in the site root, copy `.env.example` to `.env` and fill in the project ID:
+   ```bash
+   cp .env.example .env
+   ```
+   ```
+   VITE_SANITY_PROJECT_ID=your-project-id
+   VITE_SANITY_DATASET=production
+   ```
+5. Restart `npm run dev` — the blog list and post pages will now pull live content from Sanity.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Content model
+
+Each **Blog Post** document has: title, slug, banner image, excerpt, body (rich text), and a published date. Schema lives in `studio/schemaTypes/post.js`.
