@@ -50,11 +50,11 @@ export const quote = {
 export const workHelps = {
   heading: "My ministry helps you grow by:",
   items: [
-    "Deepening your walk with God through music and the Word",
-    "Strengthening marriages through practical, faith-based counsel",
-    "Equipping the next generation of Gospel artistes and producers",
-    "Bringing faith-centered motivational teaching to your event",
-    "Producing excellent, anointed Gospel music at Praise Channel Studios",
+    "Grow closer to God through music, the Word, and practical Christian teaching.",
+    "Build stronger marriages and relationships through biblical and practical counsel.",
+    "Discover and develop your gifts as a Gospel artiste, musician, or producer.",
+    "Find encouragement and purpose through faith-based motivational teaching and speaking.",
+    "Experience the power of Gospel music through uplifting songs that inspire, encourage, and draw hearts closer to God.",
   ],
   cta: `Book ${site.firstName} to Speak`,
 };
@@ -168,7 +168,7 @@ export const testimonial = {
 
 export const contact = {
   heading: "Ready to Connect?",
-  body: "Whether it’s a ministry engagement, marriage seminar, or a personal connection, feel free to reach out through the contact options below.",
+  body: "Have a ministry invitation, marriage seminar, counselling need, or simply want to get in touch? Evang. Chuks Chidube would be glad to hear from you. Use any of the contact options below to reach out.",
 };
 
 export const footer = {

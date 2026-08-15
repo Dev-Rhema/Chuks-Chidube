@@ -1,5 +1,4 @@
 import { site, workHelps } from "../data/content";
-import PlaceholderImage from "./ui/PlaceholderImage";
 
 export default function WorkHelps() {
   return (
@@ -29,10 +28,6 @@ export default function WorkHelps() {
               </li>
             ))}
           </ul>
-        </div>
-
-        <div className="relative px-6 pb-6 sm:px-12">
-          <PlaceholderImage label="Portrait" className="aspect-16/7 w-full" />
         </div>
       </div>
     </section>
