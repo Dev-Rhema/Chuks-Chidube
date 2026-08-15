@@ -1,11 +1,18 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import BlogBanner from "../components/ui/BlogBanner";
-import { isSanityConfigured, sanityClient, urlFor, POSTS_LIST_QUERY } from "../lib/sanity";
+import {
+  isSanityConfigured,
+  sanityClient,
+  urlFor,
+  POSTS_LIST_QUERY,
+} from "../lib/sanity";
 
 export default function Blog() {
   const [posts, setPosts] = useState([]);
-  const [status, setStatus] = useState(isSanityConfigured ? "loading" : "unconfigured");
+  const [status, setStatus] = useState(
+    isSanityConfigured ? "loading" : "unconfigured",
+  );
 
   useEffect(() => {
     if (!isSanityConfigured) return;
@@ -44,11 +51,12 @@ export default function Blog() {
             Blog
           </p>
           <h1 className="mt-3 font-display text-4xl font-semibold sm:text-5xl">
-            Thoughts, Encouragement & Ministry Insights
+            Faith, Music & Marriage
           </h1>
           <p className="mt-4 text-base text-ink-600">
-            This space will share reflections, teachings, and stories from
-            ministry life.
+            Biblical insights, musical reflections, and practical marriage
+            counsel for individuals, couples, and congregations seeking to grow
+            in faith, relationships, and purpose.
           </p>
         </div>
 
@@ -75,7 +83,7 @@ export default function Blog() {
         )}
 
         {status === "ready" && posts.length > 0 && (
-          <div className="mt-12 grid gap-6 md:grid-cols-2">
+          <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {posts.map((post) => (
               <article
                 key={post._id}

@@ -3,7 +3,7 @@
 export const site = {
   name: "Evang. Chuks Chidube",
   firstName: "Evang.",
-  lastName: "Chidube",
+  lastName: "Chuks Chidube",
   role: "Gospel Minister, Singer & Motivational Speaker",
   phone: "+234 803 328 2359",
   email: "chukschidube@gmail.com",
