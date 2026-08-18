@@ -28,6 +28,7 @@ html {
 }
 
 body {
+  color-scheme: light;
   background-color: var(--color-cream-50);
   color: var(--color-ink-600);
   font-family: var(--font-sans);
